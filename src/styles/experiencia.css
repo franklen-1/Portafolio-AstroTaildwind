@@ -1,0 +1,18 @@
+.card{
+    height: 100% !important;
+    background-color: #101624;
+    color: white;
+    border: solid 1px #232935;
+}
+
+ .btn-outline-primary{
+ 
+    color: #F2B544;
+    border: #F2B544;
+    border-radius: 30px;
+    border: solid 1px #F2B544;
+    width: 120px;
+ }
+ .card-body>h5,svg{
+     color: #F2B544;
+ }

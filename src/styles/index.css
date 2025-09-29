@@ -1,0 +1,97 @@
+@import "tailwindcss";
+/* ================= */
+body{
+    background-color: #0D1526;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* .btn-primary{
+    background: #F2B544;
+    border: none;
+    color: #0a101e;
+    border-radius: 25px;
+    width: 250px;
+    padding: 12px 40px;
+} */
+
+
+/* .linea{
+    display: flex;
+    justify-content: center; /* al centro horizontal 
+    height: 50px; 
+    padding: 10px;        
+} 
+.linea-int{
+    height: 3px;
+    width: 20%;
+    background: linear-gradient(to right, #fdfdfd2f 33%, rgb(255, 166, 0) 33% 66%, rgba(226, 226, 226, 0.26) 66%);
+}
+
+section{
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+/* ==================PORTADA================== */
+.gb-img{
+    background-image: linear-gradient(rgb(13, 21, 38), rgba(2, 2, 8, 0.7)),url('/img/portada.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+       height: 90vh;
+}
+.contenedor{
+
+}
+/* .row{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+
+} */
+.st-style1{
+    font-size:60px ;
+}
+
+/* ====================SOBRE MI====================== */
+
+.table>:not(caption)>*>* {
+    background-color:#0D1526;
+    color: #fff;
+}
+/* =========================CARRUSEL==================== */
+
+/* .btn-all{
+    background: #F2B544; 
+    border: none;
+    color: #0a101e;
+    border-radius: 25px;
+    width: 250px;
+    padding: 12px 40px;
+    text-align: center;
+    justify-content: center;
+} */
+/* =============Sección rápida con links============= */
+
+.card{
+    height: 100% !important;
+    background-color: #101624;
+    color: white;
+    border: solid 1px #232935;
+}
+
+ .btn-outline-primary{
+ 
+    color: #F2B544;
+    border: #F2B544;
+    border-radius: 30px;
+    border: solid 1px #F2B544;
+    width: 120px;
+ }
+ .card-body>h5,svg{
+     color: #F2B544;
+ }

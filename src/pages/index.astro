@@ -1,11 +1,423 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
+import "../styles/index.css";
+
 ---
+<BaseLayout>
 
-<Layout>
-	<Welcome />
-</Layout>
+  <div class="gb-img bg-gray-900">
+  <div class="mx-auto   max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+    <div class="relative isolate overflow-hidden bg-[rgba(31,41,55,0.2)] px-6 pt-16 after:pointer-events-none after:absolute after:inset-0 after:inset-ring after:inset-ring-white/10 sm:rounded-3xl sm:px-16 after:sm:rounded-3xl md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+      <svg viewBox="0 0 1024 1024" aria-hidden="true" class="absolute top-1/2 left-1/2 -z-10 size-256 -translate-y-1/2 mask-[radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0">
+        <circle r="512" cx="512" cy="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
+        <defs>
+          <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+            <stop stop-color="#7775D6" />
+            <stop offset="1" stop-color="#E935C1" />
+          </radialGradient>
+        </defs>
+      </svg>
+      <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+        <h2 class="text-3xl font-semibold tracking-tight text-balance text-white sm:text-4xl st-style1">¡Hola! Soy <p style="color: #F2B544;">Frank!</p></h2>
+        <p class="mt-6 text-lg/8 text-pretty text-gray-300">Desarrollador web apasionado por crear experiencias modernas con HTML, CSS, JavaScript y Bootstrap.</p>
+        <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+          <a href="/proyectos" class="rounded-md bg-gray-700 px-3.5 py-2.5 text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Ver proyectos </a>
+          <a href="/contacto" class="text-sm/6 font-semibold text-white hover:text-gray-100">
+            Contáctame
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+      <div class="relative mt-16 h-80 lg:mt-8">
+        <img width="1824" height="1080" src="img/img1-1.png"  alt="App screenshot" class="absolute top-0 left-0 w-170 max-w-none    ring-1 ring-white/10" />
+      </div>
+    </div>
+  </div>
+</div>
+	 <!-- HERO de bienvenida -->
+<div class=" overflow-hidden  py-24 sm:py-32 bg-gray-900">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+      <div class="lg:pt-4 lg:pr-8">
+        <div class="lg:max-w-lg">
+          <h2 class="text-base/7 font-semibold text-indigo-400">SOBRE MI</h2>
+          <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">¡Hola! Soy Frank</p>
+          <p class="mt-6 text-lg/8 text-gray-300">Soy diseñador visual con un fuerte enfoque en el branding digital. El diseño visual busca atraer, inspirar, crear deseos y motivar a las personas a responder a los mensajes, con el objetivo de generar un impacto positivo.</p>
+          <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-400 lg:max-w-none"></dl>
+            <div class="relative pl-9 text-left ">
+              <dt class="inline font-semibold text-white">
+                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-indigo-400">
+                  <path d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z" clip-rule="evenodd" fill-rule="evenodd" />
+                </svg>
+                Construir identidades visuales coherentes y memorables,
+              </dt>
+              <dd class="inline">que representen la esencia y personalidad de cada marca de forma auténtica.</dd>
+            </div>
+            <div class="relative pl-9 text-left mt-2">
+              <dt class="inline font-semibold text-white ">
+                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-indigo-400">
+                  <path d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z" clip-rule="evenodd" fill-rule="evenodd" />
+                </svg>
+               Diseñar experiencias digitales atractivas y funcionales,
+              </dt>
+              <dd class="inline">donde cada detalle visual esté pensado para mejorar la interacción y el vínculo con la audiencia.</dd>
+            </div>
+            <div class="relative pl-9 text-left mt-2">
+              <dt class="inline font-semibold text-white">
+                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-indigo-400">
+                  <path d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z" clip-rule="evenodd" fill-rule="evenodd" />
+                </svg>
+                Transformar ideas en soluciones estratégicas,
+              </dt>
+              <dd class="inline">combinando creatividad, análisis y propósito para alcanzar los objetivos de comunicación y negocio de cada proyecto.</dd>
+            </div>
+        </div>
+      </div>
+
+      <img width="2432" height="1442" src="img/about.jpg" alt="Imagen de desarrollador" class="w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-228 md:-ml-4 lg:-ml-0" />
+    </div>
+  </div>
+</div>
+<!-- Informacion (Bootstrap) -->
+<div class="text-gray-300">
+  <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">Portafolios</p>
+
+      <div class="pt-10 pb-10">
+        <img src="img/about.jpg" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80" />
+        <div class="mt-4 flex justify-between text-gray-300" >
+          <div class="text-left">
+              <dt class="font-semibold text-white">App para asesores</dt>
+            <p class="mt-1 text-sm text-gray-400">Arquitectura móvil y flujo de ventas.</p>
+          </div>
+          <div>
+            <a href="#" class="rounded-md bg-gray-700 px-3.5 py-2.5 text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Ver</a>
+          </div>
+        </div>
+      </div>
+
+
+    <div class=" mx-auto mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+      <div class="group relative">
+        <img src="img/img1.png" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80" />
+        <div class="mt-4 flex justify-between text-gray-300" >
+          <div class="text-left">
+              <dt class="font-semibold text-white">Landing de Pastelería</dt>
+            <p class="mt-1 text-sm text-gray-400">Diseño responsive con Bootstrap.</p>
+          </div>
+          <div>
+            <a href="/proyectos" class="rounded-md bg-gray-700 px-3.5 py-2.5 text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Ver</a>
+          </div>
+        </div>
+      </div>
+      <div class="group relative">
+        <img src="img/img2.png" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80" />
+        <div class="mt-4 flex justify-between text-gray-300" >
+          <div class="text-left">
+              <dt class="font-semibold text-white">Dashboard Financiero</dt>
+            <p class="mt-1 text-sm text-gray-400">KPIs y visualizaciones interactivas.</p>
+          </div>
+          <div>
+            <a href="/proyectos" class="rounded-md bg-gray-700 px-3.5 py-2.5 text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Ver</a>
+          </div>
+        </div>
+      </div>
+      <div class="group relative">
+        <img src="img/img4.png" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80" />
+        <div class="mt-4 flex justify-between text-gray-300" >
+          <div class="text-left">
+              <dt class="font-semibold text-white">App para reclutadores</dt>
+            <p class="mt-1 text-sm text-gray-400">Pagina de Staffing y dadministracion.</p>
+          </div>
+          <div>
+            <a href="/proyectos" class="rounded-md bg-gray-700 px-3.5 py-2.5 text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Ver</a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+ 
+    <div class="flex justify-end pt-10 pb-10">
+        <a href="/proyectos" class=" flex  gap-x-5 p-3 pl-10 pr-10 text-sm/6 font-semibold text-white hover:bg-indigo-400  rounded-md bg-indigo-500">
+              <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 flex-none text-gray-500">
+                <path d="M2 10a8 8 0 1 1 16 0 8 8 0 0 1-16 0Zm6.39-2.908a.75.75 0 0 1 .766.027l3.5 2.25a.75.75 0 0 1 0 1.262l-3.5 2.25A.75.75 0 0 1 8 12.25v-4.5a.75.75 0 0 1 .39-.658Z" clip-rule="evenodd" fill-rule="evenodd" />
+              </svg>
+              Ver mas proyectos
+        </a>
+
+    </div>
+
+  </div>
+</div>
+<!-- CARRUSEL (Bootstrap) -->
+
+<div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+      <div class="max-w-xl lg:max-w-lg">
+        <h2 class="text-4xl font-semibold tracking-tight text-white">Mantente al día con mis proyectos</h2>
+        <p class="mt-4 text-lg text-gray-300">Recibe en tu correo mis últimos diseños, proyectos de programación y recursos gratuitos.</p>
+        <div class="mt-6 flex max-w-md gap-x-4">
+          <label for="email-address" class="sr-only">Email address</label>
+          <input id="email-address" type="email" name="email" required placeholder="Enter your email" autocomplete="email" class="min-w-0 flex-auto rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+          <button type="submit" class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Suscribirse</button>
+        </div>
+      </div>
+      <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+        <div class="flex flex-col items-start">
+          <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-white">
+              <path d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <dt class="mt-4 text-base font-semibold text-white">Nuevos proyectos</dt>
+          <dd class="mt-2 text-base/7 text-gray-400">Descubre lo que voy creando y las tecnologías que estoy aprendiendo.</dd>
+        </div>
+        <div class="flex flex-col items-start">
+          <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-white">
+              <path d="M10.05 4.575a1.575 1.575 0 1 0-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 0 1 3.15 0v1.5m-3.15 0 .075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 0 1 3.15 0V15M6.9 7.575a1.575 1.575 0 1 0-3.15 0v8.175a6.75 6.75 0 0 0 6.75 6.75h2.018a5.25 5.25 0 0 0 3.712-1.538l1.732-1.732a5.25 5.25 0 0 0 1.538-3.712l.003-2.024a.668.668 0 0 1 .198-.471 1.575 1.575 0 1 0-2.228-2.228 3.818 3.818 0 0 0-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0 1 16.35 15m.002 0h-.002" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <dt class="mt-4 text-base font-semibold text-white">Contenido de valor</dt>
+          <dd class="mt-2 text-base/7 text-gray-400">Nada de spam, solo lo que realmente te pueda inspirar o servir.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+  <div aria-hidden="true" class="absolute top-0 left-1/2 -z-10 -translate-x-1/2 blur-3xl xl:-top-6">
+    <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="aspect-1155/678 w-288.75 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"></div>
+  </div>
+</div>
+
+  <!-- Sección rápida con links -->
+<div class="bg-gray-900 py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
+        <h2 class="text-4xl font-semibold tracking-tight text-white">Habilidades</h2>
+        <p class="mt-4 text-lg text-gray-300">“Competencias técnicas y creativas que me permiten transformar ideas en resultados reales y funcionales”</p>
+       
+    <dl class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3  py-15  ">
+      <div class=" flex max-w-xs flex-col gap-y-4">
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
+              <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-gray-400 group-hover:text-white">
+                  <path d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="flex-auto">
+                <a href="#" class="block font-semibold text-white">
+                  HTML5
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+      </div>
+      <div class="flex max-w-xs flex-col gap-y-4">
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
+              <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-gray-400 group-hover:text-white">
+                  <path d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="flex-auto">
+                <a href="#" class="block font-semibold text-white">
+                  Tailwind CSS y Bootstrap
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+      </div>
+      <div class="flex max-w-xs flex-col gap-y-4">
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
+              <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-gray-400 group-hover:text-white">
+                  <path d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="flex-auto">
+                <a href="#" class="block font-semibold text-white">
+                  JavaScript
+
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+      </div>
+      <div class="flex max-w-xs flex-col gap-y-4">
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
+              <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-gray-400 group-hover:text-white">
+                  <path d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="flex-auto">
+                <a href="#" class="block font-semibold text-white">
+                  Git y GitHub
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+      </div>
+      <div class="flex max-w-xs flex-col gap-y-4">
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
+              <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-gray-400 group-hover:text-white">
+                  <path d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="flex-auto">
+                <a href="#" class="block font-semibold text-white">
+                  React, Next.js, Astro
+                  <span class="absolute inset-0"></span>
+                </a>
+                <!-- <p class="mt-1 text-gray-400">Build strategic funnels that will convert</p> -->
+              </div>
+            </div>
+      </div>
+      <div class="flex max-w-xs flex-col ">
+        <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
+              <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-gray-400 group-hover:text-white">
+                  <path d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="flex-auto">
+                <a href="#" class="block font-semibold text-white">
+                  APIs REST y GraphQL
+                  <span class="absolute inset-0"></span>
+                </a>
+                <!-- <p class="mt-1 text-gray-400">Your customers’ data will be safe and secure</p> -->
+              </div>
+        </div>
+      </div>
+    </dl>
+  </div>
+</div>
+
+<!--  -->
+
+
+
+<div class="py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+      <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+        <div class="mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-file-earmark-person " viewBox="0 0 16 16">
+            <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+            <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5z"/>
+          </svg>
+        </div>
+        <dd class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">35 Clientes satisfechos</dd>
+        <dt class="text-base/7 text-gray-400">Personas y empresas que confiaron en mis servicios.</dt>
+        </div>
+      <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+        <div class="mx-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-sort-up-alt" viewBox="0 0 16 16">
+            <path d="M3.5 13.5a.5.5 0 0 1-1 0V4.707L1.354 5.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.5.5 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 4.707zm4-9.5a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1zm0 3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 0 1zm0 3a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1zM7 12.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5"/>
+          </svg>
+        </div>
+        <dd class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">50 Proyectos completados</dd>
+        <dt class="text-base/7 text-gray-400">Trabajos entregados con éxito en distintas áreas de diseño y desarrollo.</dt>     
+      </div>
+      <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+        <div class="mx-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
+          </svg>   
+        </div>
+        <dd class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">Colaboraciones destacadas</dd>
+        <dt class="text-base/7 text-gray-400">Alianzas con marcas y profesionales para crear proyectos de alto impacto.</dt>
+      </div>
+    </dl>
+  </div>
+</div>
+<!--  -->
+
+<!-- Seccion de Reviews ALL --> 
+<div class="bg-gray-900 py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">Reseñas</h2>
+      <p class="mt-2 text-lg/8 text-gray-300">“Compromiso y resultados garantizados”</p>
+    </div>
+    <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-700 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      <article class="flex max-w-xl flex-col items-start justify-between">
+        <div class="flex items-center gap-x-4 text-xs">
+          <time datetime="2020-03-16" class="text-gray-400">Mar 16, 2020</time>
+          <a href="#" class="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-800">Teo</a>
+        </div>
+        <div class="group relative grow">
+          <p class="mt-5 line-clamp-3 text-sm/6 text-gray-400">"Trabajar con él fue una experiencia excelente. Supo captar mis ideas y transformarlas en un diseño claro y funcional. El resultado final superó mis expectativas."</p>
+          <p class="text-warning mb-0">★★★★★</p>
+        </div>
+        <div class="relative mt-8 flex items-center gap-x-4 justify-self-end">
+          <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="size-10 rounded-full bg-gray-800" />
+          <div class="text-sm/6">
+            <p class="font-semibold text-white">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Michael Foster
+              </a>
+            </p>
+            <p class="text-gray-400">Emprendedor digital</p>
+          </div>
+        </div>
+      </article>
+      <article class="flex max-w-xl flex-col items-start justify-between">
+        <div class="flex items-center gap-x-4 text-xs">
+          <time datetime="2020-03-10" class="text-gray-400">Mar 10, 2020</time>
+          <a href="#" class="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-800">Credit Repair</a>
+        </div>
+        <div class="group relative grow">
+          <p class="mt-5 line-clamp-3 text-sm/6 text-gray-400">"Destaco su profesionalismo y compromiso. Siempre cumple con los tiempos y propone soluciones creativas que hacen destacar cualquier proyecto."</p>
+          <p class="text-warning mb-0">★★★★★</p>
+        </div>
+        <div class="relative mt-8 flex items-center gap-x-4 justify-self-end">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="size-10 rounded-full bg-gray-800" />
+          <div class="text-sm/6">
+            <p class="font-semibold text-white">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Lindsay Walton
+              </a>
+            </p>
+            <p class="text-gray-400">Diseñadora gráfica</p>
+          </div>
+        </div>
+      </article>
+      <article class="flex max-w-xl flex-col items-start justify-between">
+        <div class="flex items-center gap-x-4 text-xs">
+          <time datetime="2020-02-12" class="text-gray-400">Feb 12, 2020</time>
+          <a href="#" class="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-800">G&M Employment</a>
+        </div>
+        <div class="group relative grow">
+          <p class="mt-5 line-clamp-3 text-sm/6 text-gray-400">"Su portafolio refleja perfectamente su talento. Me brindó un servicio completo, desde la planificación hasta la entrega final, siempre con atención al detalle."</p>
+          <p class="text-warning mb-0">★★★★★</p>
+        </div>
+        <div class="relative mt-8 flex items-center gap-x-4 justify-self-end">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="size-10 rounded-full bg-gray-800" />
+          <div class="text-sm/6">
+            <p class="font-semibold text-white">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Tom Cook
+              </a>
+            </p>
+            <p class="text-gray-400">Consultor de negocios</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+
+
+
+</BaseLayout>
