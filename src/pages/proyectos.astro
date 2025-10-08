@@ -17,30 +17,40 @@ const description = "Perfil, experiencia y propósito profesional.";
   </div>
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0">
-      <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-6xl">“Lo que ofrezco como desarrollador y diseñador”</h2>
+
+      <div id=container class="text-5xl font-semibold tracking-tight text-white sm:text-6xl">
+        Lo que ofrezco como 
+        <div id=flip>
+          <div><div>Desarrollador</div></div>
+          <div><div>Diseñador</div></div>
+          <div><div>profesional</div></div>
+        </div>
+        
+      </div>
+   
+      <!-- <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-6xl">“Lo que ofrezco como desarrollador y diseñador”</h2> -->
       <p class="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">“Soy un desarrollador y diseñador apasionado por crear experiencias digitales únicas, combinando código limpio con un diseño atractivo. Me enfoco en construir proyectos modernos, responsivos y fáciles de usar.”</p>
     </div>
     <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
       <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-        <a href="#">Habilidades <span aria-hidden="true">&rarr;</span></a>
-        <a href="#">Servicios <span aria-hidden="true">&rarr;</span></a>
-        <a href="#">Sobre mí <span aria-hidden="true">&rarr;</span></a>
-        <a href="#">Contáctame <span aria-hidden="true">&rarr;</span></a>
+        <a href="/habilidades">Habilidades <span aria-hidden="true">&rarr;</span></a>
+        <a href="/sobremi">Sobre mí <span aria-hidden="true">&rarr;</span></a>
+        <a href="/contacto">Contáctame <span aria-hidden="true">&rarr;</span></a>
       </div>
       <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
-        <div class="flex flex-col-reverse gap-1">
+        <div class="flex flex-col-reverse gap-1 transform transition-all duration-700 hover:-translate-y-2 hover:scale-105">
           <dt class="text-base/7 text-gray-300">de experiencia en desarrollo y diseño</dt>
           <dd class="text-3xl font-semibold tracking-tight text-white">+5 años</dd>
         </div>
-        <div class="flex flex-col-reverse gap-1">
+        <div class="flex flex-col-reverse gap-1 transform transition-all duration-700 hover:-translate-y-2 hover:scale-105">
           <dt class="text-base/7 text-gray-300">realizados para clientes y prácticas personales</dt>
-          <dd class="text-3xl font-semibold tracking-tight text-white">+30 proyectos</dd>
+          <dd class="text-3xl font-semibold tracking-tight text-white">+10 proyectos</dd>
         </div>
-        <div class="flex flex-col-reverse gap-1">
+        <div class="flex flex-col-reverse gap-1 transform transition-all duration-700 hover:-translate-y-2 hover:scale-105">
           <dt class="text-base/7 text-gray-300">en soluciones responsivas y usables</dt>
           <dd class="text-3xl font-semibold tracking-tight text-white">100% enfocado</dd>
         </div>
-        <div class="flex flex-col-reverse gap-1">
+        <div class="flex flex-col-reverse gap-1 transform transition-all duration-700 hover:-translate-y-2 hover:scale-105">
           <dt class="text-base/7 text-gray-300">Ilimitado para transformar ideas en proyectos digitales</dt>
           <dd class="text-3xl font-semibold tracking-tight text-white">Creatividad</dd>
         </div>
@@ -54,7 +64,7 @@ const description = "Perfil, experiencia y propósito profesional.";
   <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
       <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">Proyectos</p>
 
-      <div class="pb-10 pt-10">
+      <div class="pb-10 pt-10 transform transition-all duration-700 hover:-translate-y-2 hover:scale-105">
         <img src="img/about.jpg" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80" />
         <div class="mt-4 flex justify-between text-gray-300" >
           <div class="text-left">
@@ -67,8 +77,8 @@ const description = "Perfil, experiencia y propósito profesional.";
         </div>
       </div>
 
-    <div class=" mx-auto mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-      <div class="group relative">
+    <div class=" mx-auto mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8 ">
+      <div class="group relative transform transition-all duration-700 hover:-translate-y-2 hover:scale-105">
         <img src="img/img1.png" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80" />
         <div class="mt-4 flex justify-between text-gray-300" >
           <div class="text-left">
@@ -80,7 +90,7 @@ const description = "Perfil, experiencia y propósito profesional.";
           </div>
         </div>
       </div>
-      <div class="group relative">
+      <div class="group relative transform transition-all duration-700 hover:-translate-y-2 hover:scale-105">
         <img src="img/img2.png" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80" />
         <div class="mt-4 flex justify-between text-gray-300" >
           <div class="text-left">
@@ -92,7 +102,7 @@ const description = "Perfil, experiencia y propósito profesional.";
           </div>
         </div>
       </div>
-      <div class="group relative">
+      <div class="group relative transform transition-all duration-700 hover:-translate-y-2 hover:scale-105">
         <img src="img/img4.png" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80" />
         <div class="mt-4 flex justify-between text-gray-300" >
           <div class="text-left">
@@ -104,7 +114,7 @@ const description = "Perfil, experiencia y propósito profesional.";
           </div>
         </div>
       </div>
-      <div class="group relative">
+      <div class="group relative transform transition-all duration-700 hover:-translate-y-2 hover:scale-105">
         <img src="img/img3.png" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80" />
         <div class="mt-4 flex justify-between text-gray-300" >
           <div class="text-left">
@@ -116,7 +126,7 @@ const description = "Perfil, experiencia y propósito profesional.";
           </div>
         </div>
       </div>
-      <div class="group relative">
+      <div class="group relative transform transition-all duration-700 hover:-translate-y-2 hover:scale-105">
         <img src="img/img5.png" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80" />
         <div class="mt-4 flex justify-between text-gray-300" >
           <div class="text-left">
@@ -128,7 +138,7 @@ const description = "Perfil, experiencia y propósito profesional.";
           </div>
         </div>
       </div>
-      <div class="group relative">
+      <div class="group relative transform transition-all duration-700 hover:-translate-y-2 hover:scale-105">
         <img src="img/img6.png" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80" />
         <div class="mt-4 flex justify-between text-gray-300" >
           <div class="text-left">
